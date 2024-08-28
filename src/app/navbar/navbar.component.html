@@ -1,0 +1,31 @@
+<app-navbar-item 
+  label="Home" 
+  inActiveIconSrc="home-icon-inactive.svg" 
+  activeIconSrc="home-icon-active.svg"
+  [isActive]="isActive('Home')" 
+  (click)="setActive('Home')">
+</app-navbar-item>
+
+<app-navbar-item 
+  label="Activity" 
+  inActiveIconSrc="activity-icon-inactive.svg" 
+  activeIconSrc="activity-icon-active.svg"
+  [isActive]="isActive('Activity')" 
+  (click)="setActive('Activity')">
+</app-navbar-item>
+
+<app-navbar-item 
+  label="Wiki" 
+  inActiveIconSrc="wiki-icon-inactive.svg" 
+  activeIconSrc="wiki-icon-active.svg"
+  [isActive]="isActive('Wiki')" 
+  (click)="setActive('Wiki')">
+</app-navbar-item>
+
+<app-navbar-item 
+  label="Account" 
+  inActiveIconSrc="account-icon-inactive.svg" 
+  activeIconSrc="account-icon-active.svg"
+  [isActive]="isActive('Account')" 
+  (click)="setActive('Account')">
+</app-navbar-item>

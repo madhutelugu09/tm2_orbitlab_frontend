@@ -1,0 +1,21 @@
+<div 
+  class="p-[12px_40px] flex flex-row gap-2 w-[176px] h-[48px] cursor-pointer"
+  [ngClass]="{
+    'text-white font-open-sans text-[16px] font-normal leading-[24px] tracking-[0.2px] text-left': isActive, 
+    'text-customSideBarText font-open-sans text-[16px] font-normal leading-[24px] tracking-[0.2px] text-left': !isActive
+  }"
+  (click)="onClick()"
+>
+    <img 
+      [src]="iconToDisplay" 
+      alt="{{label}}" 
+      class="w-[24px] h-[24px] pt-[2.4px]"
+      [ngClass]="{
+        'filter grayscale-0': isActive,
+        'filter grayscale': !isActive
+      }"
+    />
+    <span class="ml-2">
+      {{label}}
+    </span>
+</div>
